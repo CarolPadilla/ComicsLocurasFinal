@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <!--iocono de hamburguesa-->
+      <!--<ion-menu-button></ion-menu-button>--->
+    </ion-buttons>
+    <ion-title>
+      <!---titulo e icono mas bonito-->
+      <img src="assets/img/logo.jpg" alt="ComicsLocuras Logo" class="logo">
+      <ion-icon name="person"></ion-icon>
+      Inicio de Sesión 
+      <ion-icon name="person"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-content>
+     <!--titulo-->
+      <h1>Ingreso</h1>
+        <!-- campo de entrada  email -->
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input [(ngModel)]="correo" type="email"></ion-input>
+      </ion-item>
+      <!---lo mismo pero con la contraselña-->
+
+      <ion-item>
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input [(ngModel)]="clave" type="password"> <ion-input-password-toggle slot="end"></ion-input-password-toggle></ion-input>
+        
+      </ion-item>
+<!--aqui va el boton para que ingreses-->
+      <ion-button expand="full" (click)="ingresar()">Ingresar</ion-button>
+    <h6>¿Olvidaste tu contraseña?, <a [routerLink]="['/recuperarcontrase']">Recuperar contraseña</a></h6>
+    <h5>¿No tienes cuenta?, <a  [routerLink]="['/registro']">Registrate</a></h5>    
+    </ion-card-content>
+  
+  </ion-card>
+ 
+</ion-content>
+

@@ -1,0 +1,82 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      <img src="assets/img/logo.jpg" alt="ComicsLocuras Logo" class="logo">
+      <ion-icon name="book" class="pink-icon"></ion-icon>
+      <span class="pink-title">ComicsLocuras</span>
+      <ion-icon name="book" class="pink-icon"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <!-- Introducción -->
+  <section class="intro-section">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <h1><ion-icon name="flash-outline"></ion-icon>Bienvenidos a ComicsLocuras {{ usuario.correo_u }}<ion-icon name="flash-outline"></ion-icon></h1>
+          <p>Vuelvete loco con todos los comics recomendados únicamente para ti.</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </section>
+
+
+
+  <!-- Tarjeta que muestra información sobre un manga o comics -->
+  <ion-card class="highlight-card">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12" size-md="6">
+          <img alt="Boruto manga" src="https://th.bing.com/th/id/OIP.QoYpakW8ImfkaLu52MT9fwAAAA?rs=1&pid=ImgDetMain" />
+        </ion-col>
+        <ion-col size="12" size-md="6">
+          <ion-card-header>
+            <ion-card-title>Boruto</ion-card-title>
+            <ion-card-subtitle>Naruto Next Generations es un manga creado por Masashi Kishimoto y Mikio Ikemoto. La historia sigue a Boruto Uzumaki, el hijo del séptimo Hokage, Naruto Uzumaki.</ion-card-subtitle>
+          </ion-card-header>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+
+  <!-- Categorías -->
+  <section class="models-section">
+    <ion-grid>
+      <!-- Título -->
+      <ion-row>
+        <ion-col>
+          <h2>¿Buscas un Manga o Comics en específico?</h2>
+          <p>Elige entre nuestras categorías.</p>
+        </ion-col>
+      </ion-row>
+      
+      <!-- Botones de categorías -->
+      <ion-row>
+        <ion-col size="12">
+          <ion-grid>
+            <ion-row>
+              <ion-col size="12" size-md="6" *ngFor="let manga of categorias">
+                <ion-button shape="round" expand="block" (click)="irCategoria(manga)">
+                  {{ manga.nombre_ca }}
+                </ion-button>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </section>
+
+  <!-- Pie de página -->
+  <ion-footer collapse="fade">
+    <ion-toolbar>
+      <ion-title>ComicsLocuras</ion-title>
+    </ion-toolbar>
+  </ion-footer>
+</ion-content>
+

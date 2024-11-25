@@ -1,0 +1,96 @@
+/* Estilo general para el ion-content */
+ion-content {
+    --background: black; /* Fondo negro para toda la página */
+    color: white; /* Texto blanco para todo el contenido */
+}
+ion-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f8057e; /* Color rosa fuerte para el título */
+  }
+  
+  ion-icon {
+    color: #f03994; /* Color rosa fuerte para los íconos */
+    margin: 0 5px; /* Espaciado entre el ícono y el texto */
+  }
+/* Estilo para el ion-card */
+ion-card {
+    background-color: #2b2a2a; /* Fondo gris oscuro para la tarjeta */
+    border-radius: 8px; /* Bordes redondeados */
+    margin: 20px auto; /* Centra la tarjeta horizontalmente */
+    max-width: 600px; /* Ancho máximo de la tarjeta */
+    padding: 20px; /* Padding dentro de la tarjeta */
+    color: white; /* Texto blanco dentro de la tarjeta */
+}
+
+/* Estilo para los campos de entrada (nombre, email, contraseña) */
+ion-item {
+    --background: #646262; /* Fondo gris oscuro para los campos */
+    border-radius: 8px; /* Bordes redondeados */
+    margin-bottom: 15px; /* Espacio entre los campos */
+    padding: 10px; /* Padding dentro del recuadro */
+    color: white; /* Texto blanco dentro de los campos */
+}
+
+/* Estilo para los labels dentro de los campos de entrada */
+ion-label {
+    color: white; /* Texto blanco */
+}
+
+/* Estilo para los inputs dentro de los campos de entrada */
+ion-input {
+    --background: transparent; /* Fondo transparente para los inputs */
+    color: white; /* Texto blanco dentro de los inputs */
+    border: 1px solid #666; /* Borde gris alrededor de los inputs */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 10px; /* Padding dentro del input */
+}
+
+/* Contenedor para alinear los botones */
+.button-group {
+    display: flex;
+    justify-content: space-between; /* Espacio igual entre los botones */
+    padding: 20px 0 0 0; /* Espacio superior para separar los botones del contenido */
+}
+
+/* Estilo para los botones */
+ion-button {
+    --background: #fd0481; /* Fondo rosado */
+    --color: white; /* Texto blanco */
+    --border-radius: 8px; /* Bordes redondeados */
+    --padding-start: 20px; /* Padding ajustado */
+    --padding-end: 20px; /* Padding ajustado */
+    --padding-top: 12px; /* Padding ajustado */
+    --padding-bottom: 12px; /* Padding ajustado */
+    font-size: 1rem; /* Tamaño de fuente ajustado */
+    font-weight: bold; /* Negrita */
+    text-transform: uppercase; /* Mayúsculas */
+    width: 48%; /* Ancho para que los botones ocupen el 48% del contenedor */
+    border: 1px solid transparent; /* Sin borde adicional */
+}
+
+/* Estilo para el estado hover de los botones */
+ion-button:hover {
+    --background: #e60076; /* Fondo rosado más oscuro al pasar el mouse */
+}
+
+/* Estilo general para el texto dentro del ion-content */
+ion-content * {
+    color: white; /* Asegura que todo el texto dentro del ion-content sea blanco */
+}
+/* Estilo para el borde del avatar (ícono de perfil) */
+ion-avatar {
+    border: 2px solid #fd0481; /* Borde rosa alrededor del avatar */
+    border-radius: 50%; /* Bordes redondeados para el avatar */
+    padding: 2px; /* Espaciado entre la imagen y el borde */
+    display: inline-block; /* Asegura que el borde siga la forma de la imagen */
+}
+
+/* Logo */
+.logo {
+    max-width: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  

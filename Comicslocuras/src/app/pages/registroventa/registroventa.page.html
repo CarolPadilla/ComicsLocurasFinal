@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <!--icono de hamburguesa-->
+      <!---<ion-menu-button></ion-menu-button>--->
+    </ion-buttons>
+    <ion-title>
+      <!--ionco y titulo mas bonito-->
+      <img src="assets/img/logo.jpg" alt="ComicsLocuras Logo" class="logo">
+      <ion-icon name="person"></ion-icon>
+      ComicsLocuras
+      <ion-icon name="person"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+  
+  <form (ngSubmit)="registrarVenta()" #ventaForm="ngForm">
+    <ion-item>
+      <ion-label position="floating">Nombre del Producto</ion-label>
+      <ion-input type="text" [(ngModel)]="venta.nombreProducto" name="nombreProducto" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Cantidad</ion-label>
+      <ion-input type="number" [(ngModel)]="venta.cantidad" name="cantidad" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Precio</ion-label>
+      <ion-input type="number" [(ngModel)]="venta.precio" name="precio" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Fecha</ion-label>
+      <ion-datetime [(ngModel)]="venta.fecha" name="fecha" required></ion-datetime>
+    </ion-item>
+
+    <ion-button expand="full" type="submit">Registrar Venta</ion-button>
+  </form>
+</ion-content>

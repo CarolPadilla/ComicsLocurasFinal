@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      <ion-icon name="man"></ion-icon>
+      ComicsLocuras
+      <ion-icon name="man"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <ion-card>
+    <h1>Perfil</h1>
+    <ion-card-header>
+      <h1>
+          <img [src]="imagen || 'assets/img/logo.jpg'" >
+      </h1>
+    </ion-card-header>
+    <ion-card-header>
+      <ion-card-title>Datos del perfil</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+
+      <ion-item>
+        <ion-label>Nombre: </ion-label>
+        <ion-text>{{usuario.nombre_u}}</ion-text>
+      </ion-item>
+      <ion-item>
+        <ion-label>Email: </ion-label>
+        <ion-text>{{usuario.correo_u}}</ion-text>
+      </ion-item>
+      <ion-item>
+        <ion-label>Contraseña: </ion-label>
+        <ion-input type="password" value="{{usuario.clave_u}}" disabled></ion-input>
+      </ion-item>
+
+    </ion-card-content>
+    <ion-button  (click)="editProfile()" >Editar perfil</ion-button>
+    <ion-button  [routerDirection]="'root'" [routerLink]="'/home'">Volver</ion-button>
+  </ion-card>
+</ion-content>

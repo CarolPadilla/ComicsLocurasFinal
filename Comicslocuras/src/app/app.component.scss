@@ -1,0 +1,44 @@
+
+  /* Estilo para el contenido del menú */
+  ion-content {
+    --background: #0a0707; /* Fondo negro para el contenido */
+    padding: 0; /* Quita el padding por defecto */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinea los elementos al inicio */
+    height: 100%;
+  }
+ 
+  /* Encabezado del menú */
+  ion-header.cabeza {
+    --background: #000000; /* Fondo negro */
+  }
+  
+  /* Estilo para los ítems */
+  ion-item {
+    --background: transparent; /* Sin fondo en los ítems */
+    color: #050404; /* Texto blanco */
+    font-size: 1.2em; /* Aumenta el tamaño del texto */
+    font-weight: bold; /* Hace el texto más visible */
+    border: none; /* Quita cualquier borde */
+    padding: 10px 0; /* Ajusta el espacio vertical */
+  }
+  
+  /* Estilo para los íconos dentro de los ítems */
+  ion-icon {
+    color: #ff00ff; /* Iconos fucsias */
+    font-size: 1.9em; /* Tamaño de los íconos */
+  }
+  
+  /* Avatar estilo */
+  ion-avatar img {
+    border: 2px solid #ff00ff; /* Borde fucsia */
+
+  }
+  
+  
+  /* Mejora la interactividad de los ítems */
+  ion-item:hover {
+    --background: #6e6868; /* Color al pasar el cursor */
+    cursor: pointer;
+  }

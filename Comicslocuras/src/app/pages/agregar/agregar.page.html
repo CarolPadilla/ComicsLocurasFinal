@@ -1,0 +1,55 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      <img src="assets/img/logo.jpg" alt="ComicsLocuras Logo" class="logo">
+      <ion-icon name="accessibility"></ion-icon>
+      ComicsLocuras
+      <ion-icon name="accessibility"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Agregar Comics/Mangas/Accesorios/Peluches</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="form-container">
+    <h1>Agregar Nuevo Comic</h1>
+    <ion-item>
+      <ion-label position="floating">Nombre del producto</ion-label>
+      <ion-input type="text" name="nombre" required [(ngModel)]="nombre"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label position="floating">Descripción</ion-label>
+      <ion-textarea name="descripcion" required [(ngModel)]="descripcion"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Precio</ion-label>
+      <ion-textarea [(ngModel)]="precio" (ionInput)="validarPrecio($event)" inputmode="decimal"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">URL de Imagen</ion-label>
+      <ion-button (click)="takePicture()"></ion-button>
+      <img [src]="imagen" alt="Imagen de producto" class="producto-imagen" *ngIf="imagen">
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Categoria del producto</ion-label>
+          <!-- [(ngModel)]="pagina" -->
+      <ion-select [(ngModel)]="categoria" name="pagina" placeholder="Seleccione la Categoria" required>
+        <ion-select-option [value]="cat.id_categoria" *ngFor="let cat of categorias">{{cat.nombre_ca}}</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-button expand="full" style="--background: #ee0a56; --color: white;" (click)="presentAlert()">Agregar</ion-button>
+    <ion-button expand="full" style="--background: #ee0a56; --color: white;" [routerLink]="['/eliminar']">listado de productos</ion-button>
+
+  </div>
+</ion-content>

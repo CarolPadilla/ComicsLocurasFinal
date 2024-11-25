@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      <img src="assets/img/logo.jpg" alt="ComicsLocuras Logo" class="logo">
+      <ion-icon name="thumbs-up" class="pink-icon"></ion-icon>
+      Detalle Producto
+      <ion-icon name="thumbs-up" class="pink-icon"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <section class="products-section">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12" size-md="6" size-lg="4">
+          <ion-card class="product-card">
+            <img [src]="producto.imagen" alt="{{producto.nombre}}" />
+            <ion-card-header>
+              <!---nombre del producto-->
+              <ion-card-title>{{ producto.nombre }}</ion-card-title>
+              <ion-card-subtitle>${{ producto.precio }}</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <p>{{ producto.descripcion }}</p>
+              <!-- Utilización de ID del producto -->
+              <ion-button expand="full" color="primary" (click)="addToCart(producto)">Añadir al carrito</ion-button>
+              <ion-button expand="full" color="danger" (click)="removeFromCart(producto)">Eliminar del carrito</ion-button>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <!-- Botón para vaciar el carrito -->
+    <ion-button expand="full" color="danger" (click)="clearCart()">Vaciar carrito</ion-button>
+    <!-- Botón para ir al carrito -->
+    <ion-button expand="full" color="secondary" (click)="goToCart()">Ir al carrito ({{ cart.length }})</ion-button>
+  </section>
+</ion-content>

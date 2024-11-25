@@ -1,0 +1,97 @@
+/* Estilo general para el ion-content */
+ion-content {
+    --background: black; /* Fondo negro para toda la página */
+    color: white; /* Texto blanco para contraste */
+    padding: 0; /* Sin padding adicional */
+}
+ion-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f8057e; /* Color rosa fuerte para el título */
+  }
+  
+  ion-icon {
+    color: #f03994; /* Color rosa fuerte para los íconos */
+    margin: 0 5px; /* Espaciado entre el ícono y el texto */
+  }
+
+/* Contenedor centralizado con fondo gris oscuro */
+.recovery-container {
+    background-color: #333; /* Fondo gris oscuro */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para profundidad */
+    padding: 20px; /* Padding dentro del contenedor */
+    max-width: 500px; /* Ancho máximo reducido del contenedor */
+    margin: 20px auto; /* Centra el contenedor horizontalmente */
+    text-align: center; /* Centra el texto dentro del contenedor */
+}
+
+/* Estilo para el título principal */
+h1 {
+    color: white; /* Texto blanco */
+    margin-bottom: 20px; /* Espacio abajo del título */
+    font-size: 1.8rem; /* Tamaño de fuente más grande */
+}
+
+/* Estilo para los párrafos dentro del contenedor */
+p {
+    color: white; /* Texto blanco */
+    margin-bottom: 20px; /* Espacio inferior */
+    font-size: 1rem; /* Tamaño de fuente ajustado */
+}
+
+/* Estilo para los botones con color rosa y efectos llamativos */
+.recovery-button {
+    --background: #fd0481; /* Fondo rosa fuerte */
+    --color: white; /* Texto blanco */
+    --border-radius: 8px; /* Bordes redondeados */
+    --padding-start: 20px; /* Padding ajustado */
+    --padding-end: 20px; /* Padding ajustado */
+    --padding-top: 12px; /* Padding ajustado */
+    --padding-bottom: 12px; /* Padding ajustado */
+    margin-top: 20px; /* Espacio superior */
+    font-size: 1rem; /* Tamaño de fuente ajustado */
+    font-weight: bold; /* Negrita */
+    text-transform: uppercase; /* Mayúsculas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para profundidad */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transición para efectos al pasar el mouse */
+}
+
+.recovery-button:hover {
+    --background: #e60076; /* Fondo rosa más oscuro al pasar el mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada al pasar el mouse */
+}
+
+/* Estilo para los items dentro del formulario */
+ion-item {
+    --background: #444; /* Fondo gris más oscuro para los items */
+    --border-radius: 8px; /* Bordes redondeados */
+    margin-top: 10px; /* Espacio superior */
+}
+
+/* Estilo para los elementos de entrada (ion-input) */
+ion-input {
+    color: white; /* Texto blanco */
+    font-size: 1rem; /* Tamaño de fuente ajustado */
+}
+
+/* Estilo para el enlace de iniciar sesión */
+.back-to-login p {
+    color: white; /* Texto blanco */
+    margin-top: 20px; /* Espacio superior */
+}
+
+.back-to-login a {
+    color: #fd0481; /* Color rosa para el enlace */
+    font-weight: bold; /* Negrita */
+    text-decoration: underline; /* Subrayado del enlace */
+}
+
+/* Logo */
+.logo {
+    max-width: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  

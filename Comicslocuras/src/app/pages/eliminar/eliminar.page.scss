@@ -1,0 +1,70 @@
+/* Estilo general para el ion-content */
+ion-content {
+    --background: black; /* Fondo negro para toda la página */
+    color: white; /* Texto blanco para todo el contenido */
+}
+ion-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f8057e; /* Color rosa fuerte para el título */
+  }
+  
+  ion-icon {
+    color: #f03994; /* Color rosa fuerte para los íconos */
+    margin: 0 5px; /* Espaciado entre el ícono y el texto */
+  }
+
+/* Estilo para el título adicional */
+.custom-title {
+    text-align: center; /* Centrar el título */
+    color: white; /* Texto blanco */
+    font-size: 1.5rem; /* Tamaño de fuente */
+    margin: 20px 0; /* Espaciado superior e inferior */
+}
+
+
+
+/* Contenedor para alinear los botones */
+.button-group {
+    display: flex;
+    justify-content: center; /* Centrar los botones */
+    margin-top: 20px; /* Margen superior para separar los botones del contenido */
+}
+
+/* Estilo para los botones */
+.custom-button, .danger-button {
+    --background: #fd0481; /* Fondo rosado para el botón normal */
+    --color: white; /* Texto blanco */
+    --border-radius: 12px; /* Bordes redondeados */
+    --padding-start: 12px; /* Padding ajustado */
+    --padding-end: 12px; /* Padding ajustado */
+    --padding-top: 10px; /* Padding ajustado */
+    --padding-bottom: 10px; /* Padding ajustado */
+    font-size: 0.9rem; /* Tamaño de fuente ajustado */
+    font-weight: bold; /* Negrita */
+    text-transform: uppercase; /* Mayúsculas */
+    width: 60%; /* Ancho reducido del botón */
+    max-width: 200px; /* Máximo ancho para el botón */
+}
+
+/* Estilo para el botón de eliminar */
+.danger-button {
+    --background: red; /* Fondo rojo para el botón de eliminar */
+}
+
+/* Estilo para el estado hover de los botones */
+.custom-button:hover, .danger-button:hover {
+    --background: #e60076; /* Fondo rosado más oscuro al pasar el mouse para el botón normal */
+}
+.danger-button:hover {
+    --background: darkred; /* Fondo rojo oscuro al pasar el mouse para el botón de eliminar */
+}
+
+/* Logo */
+.logo {
+    max-width: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  

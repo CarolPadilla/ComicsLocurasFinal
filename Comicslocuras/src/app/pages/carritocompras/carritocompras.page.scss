@@ -1,0 +1,69 @@
+/* Logo */
+.logo {
+  max-width: 40px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+ion-content {
+    --background: #000; /* Fondo negro completo */
+  }
+  
+  ion-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f8057e; /* Color rosa fuerte para el título */
+  }
+  
+  ion-icon {
+    color: #f03994; /* Color rosa fuerte para los íconos */
+    margin: 0 5px; /* Espaciado entre el ícono y el texto */
+  }
+
+
+  ion-item {
+    --background: #333; /* Fondo gris oscuro para los recuadros de las imágenes */
+    color: #fff; /* Letras blancas */
+    border: 1px solid #f50ac2; /* Borde gris oscuro opcional */
+  }
+  
+  ion-thumbnail {
+    width: 100px; /* Ancho más grande para las imágenes */
+    height: 100px; /* Alto más grande para las imágenes */
+  }
+  
+  ion-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para que la imagen cubra todo el espacio del thumbnail */
+    border: 2px solid #f70491; /* Borde gris oscuro alrededor de las imágenes */
+  }
+  
+  ion-label h2,
+  ion-label p {
+    color: #fff; /* Letras blancas */
+  }
+  
+  ion-button {
+    --background: #ff007f; /* Rosa fuerte para los botones */
+    --color: #fff; /* Letras blancas en los botones */
+  }
+  
+  ion-button:hover {
+    --background: #e6006c; /* Color rosa más oscuro al pasar el ratón */
+  }
+  
+  ion-card {
+    --background: #333; /* Fondo gris oscuro para la tarjeta del resumen */
+    color: #fff; /* Letras blancas */
+  }
+  
+  ion-card-header {
+    border-bottom: 1px solid #110d0d; /* Borde gris oscuro en la parte inferior del encabezado de la tarjeta */
+  }
+  
+  ion-card-title {
+    color: #ff007f; /* Rosa fuerte para el título del resumen */
+  }
+  

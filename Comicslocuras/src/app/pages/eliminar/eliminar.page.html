@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <!---icono de hamburguesa-->
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      <!---titulo e icono mas bonito-->
+      <img src="assets/img/logo.jpg" alt="ComicsLocuras Logo" class="logo">
+      <ion-icon name="book"></ion-icon>
+      Eliminar Producto
+      <ion-icon name="book"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+ 
+  <h2 class="custom-title">Eliminar Producto Deseado</h2>
+
+
+  
+
+  <!--<form (ngSubmit)="buscarProducto()" #busquedaForm="ngForm">
+    <ion-item>
+      <ion-label position="floating">Nombre del Producto</ion-label>
+      <ion-input type="text" [(ngModel)]="nombreProducto" name="nombreProducto" required class="input-box"></ion-input>
+    </ion-item>
+
+    <div class="button-group">
+      <ion-button expand="block" type="submit" class="custom-button">Buscar Producto</ion-button>
+    </div>
+  </form>---->
+<!---nombre y precio -->
+  <!--<ion-item *ngIf="producto">
+    <ion-label>
+      <h2>Producto Encontrado:</h2>
+      <p>Nombre: {{ producto.nombre }}</p>
+      <p>Precio: {{ producto.precio }}</p>
+    </ion-label>
+  </ion-item>-->
+<!---boton eliminar producto -->
+ <!-- <div class="button-group">
+    <ion-button expand="block" color="danger" (click)="eliminarProducto()" *ngIf="producto" class="danger-button">Eliminar Producto</ion-button>
+  </div>-->
+  <ion-list>
+    <ion-item-sliding *ngFor="let x of arreglocrud">
+      <ion-item>
+        <h2>{{ x.nombre }}</h2>
+        <ion-label style="word-wrap: break-word;white-space: normal;">{{ x.descripcion }}</ion-label>
+        <img [src]="x.imagen" alt="Imagen de producto" class="producto-imagen" *ngIf="x.imagen">
+        <ion-label style="word-wrap: break-word;white-space: normal;">{{ x.precio }}</ion-label>
+        <ion-label style="word-wrap: break-word;white-space: normal;">{{ x.categoria }}</ion-label>
+      </ion-item>
+  
+      <ion-item-options side="end">
+        <ion-item-option (click)="modificar(x)">
+          <ion-icon slot="icon-only" name="pencil"></ion-icon>
+        </ion-item-option>
+        <ion-item-option color="danger" (click)="eliminar(x)">
+          <ion-icon slot="icon-only" name="trash"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+  
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="agregar()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

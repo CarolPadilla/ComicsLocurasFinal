@@ -1,0 +1,71 @@
+/* Fondo negro para toda la página */
+ion-content {
+    --background: black;
+  }
+  ion-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f8057e; /* Color rosa fuerte para el título */
+  }
+  
+  ion-icon {
+    color: #f03994; /* Color rosa fuerte para los íconos */
+    margin: 0 5px; /* Espaciado entre el ícono y el texto */
+  }
+
+  /* Estilo de los items de la lista */
+  ion-item {
+    --background: #333; /* Gris oscuro */
+    border: 2px solid rgb(243, 37, 140); /* Bordes rosa fuerte */
+    border-radius: 10px;
+    margin: 8px;
+  }
+  
+  /* Estilo del texto dentro de los items */
+  ion-label h2,
+  ion-label p {
+    color: white; /* Letra blanca */
+  }
+  
+  /* Estilo de la imagen más grande con bordes */
+  ion-thumbnail img {
+    width: 50px; /* Ajusta según tu necesidad */
+    height: auto;
+    border: 2px solid rgb(252, 6, 129); /* Bordes rosa */
+    border-radius: 5px; /* Bordes redondeados si lo deseas */
+  }
+  
+  /* Asegura que el texto no se acorte */
+  ion-label {
+    white-space: normal; /* Permite que el texto se ajuste y no se corte */
+    overflow-wrap: break-word; /* Rompe palabras largas si es necesario */
+  }
+  
+  /* Estilo para los botones con bordes y relleno */
+  .button-pink {
+    --background: rgb(236, 20, 128); /* Relleno rosa fuerte */
+    --border: 2px solid rgb(247, 30, 138); /* Borde rosa fuerte */
+    --color: white; /* Texto blanco en botones */
+    --border-radius: 5px;
+  }
+  
+  /* Botón específico en color rojo con bordes */
+  .button-red {
+    --background: red; /* Relleno rojo */
+    --border: 2px solid red; /* Borde rojo */
+    --color: white;
+  }
+  
+  /* Botón de agregar en color rosa fuerte */
+  .fab-button-pink {
+    --background: rgb(235, 12, 123); /* Relleno rosa fuerte */
+    --color: white;
+  }
+  
+  /* Logo */
+.logo {
+  max-width: 40px;
+  margin-right: 10px;
+  vertical-align: middle;
+}

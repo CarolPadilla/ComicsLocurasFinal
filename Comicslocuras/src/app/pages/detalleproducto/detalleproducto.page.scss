@@ -1,0 +1,116 @@
+/* Estilo general para ion-page y ion-content */
+.ion-page, ion-content {
+    background-color: #000000; /* Fondo negro para la página */
+    color: #ffffff; /* Texto blanco */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fuente estilo cómic */
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+ion-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f8057e; /* Color rosa fuerte para el título */
+}
+
+ion-icon {
+    color: #f03994; /* Color rosa fuerte para los íconos */
+    margin: 0 5px; /* Espaciado entre el ícono y el texto */
+}
+
+/* Estilo para el ion-header */
+ion-header {
+    background-color: #000000; /* Fondo negro */
+    color: #ffffff; /* Texto blanco */
+}
+
+/* Estilo para el título de la página */
+ion-header[collapse="condense"] {
+    background-color: #000000; /* Fondo negro */
+}
+
+ion-title[size="large"] {
+    font-size: 2em; /* Tamaño del título */
+    color: #ffffff; /* Texto blanco */
+}
+
+/* Sección de productos */
+.products-section {
+    padding: 20px;
+}
+
+/* Estilo para las tarjetas de producto */
+.product-card {
+    background-color: #1e1e1e; /* Fondo negro oscuro para la tarjeta */
+    color: #ffffff; /* Texto blanco */
+    border: 8px solid #ec019e; /* Borde grueso rosa claro */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para profundidad */
+    margin: 20px 0; /* Espacio alrededor de la tarjeta */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+}
+
+.product-card:hover {
+    transform: scale(1.05); /* Aumenta el tamaño de la tarjeta al pasar el mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7); /* Sombra más pronunciada al pasar el mouse */
+}
+
+/* Estilo para la imagen en la tarjeta de producto */
+.product-card img {
+    border-bottom: 3px solid #FF00FF; /* Borde fucsia en la parte inferior de la imagen */
+    border-radius: 10px 10px 0 0; /* Bordes redondeados superiores */
+    width: 100%; /* Asegura que la imagen cubra el ancho de la tarjeta */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Estilo para el título y subtítulo en las tarjetas de producto */
+ion-card-title {
+    color: #ffffff; /* Título blanco */
+    font-size: 1.5em; /* Tamaño equilibrado */
+    font-weight: bold; /* Negrita para destacar */
+}
+
+ion-card-subtitle {
+    color: #FF00FF; /* Subtítulo fucsia */
+    font-size: 1.2em;
+    font-weight: bold; /* Negrita para destacar */
+}
+
+/* Estilo para el contenido de las tarjetas */
+ion-card-content p {
+    color: #ffffff; /* Texto blanco */
+    font-size: 1em; /* Tamaño de fuente para el párrafo */
+    margin-bottom: 10px; /* Espacio debajo del párrafo */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fuente estilo cómic para la descripción */
+}
+
+/* Estilo para los botones */
+ion-button {
+    background-color: #ff00ff; /* Fondo fucsia neón */
+    color: #ffffff; /* Texto blanco */
+    font-size: 1.2em; /* Tamaño de fuente más grande para hacer más llamativo */
+    border: 3px solid #ff00ff; /* Borde fucsia neón */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 15px 30px; /* Aumenta el espaciado interno para hacerlo más grande */
+    margin: 10px 0; /* Espacio alrededor del botón */
+    text-transform: uppercase; /* Texto en mayúsculas para mayor impacto */
+    font-weight: bold; /* Texto en negrita */
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.6); /* Sombra luminosa fucsia */
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; /* Transiciones suaves */
+}
+
+ion-button:hover {
+    background-color: #ff1493; /* Fondo rosa fuerte al pasar el mouse */
+    box-shadow: 0 0 20px rgba(255, 0, 255, 1), 0 0 30px rgba(255, 105, 180, 0.8); /* Efecto de brillo intenso */
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el mouse */
+}
+
+/* Logo */
+.logo {
+    max-width: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  

@@ -1,0 +1,18 @@
+ion-toolbar {
+    background-color: #f10a7e; /* Rosa fuerte */
+  }
+  
+  ion-icon[name="star"] {
+    color: rgb(243, 8, 125); /* Color de los iconos de estrella */
+  }
+  
+  ion-title {
+    color: #f10a7e; /* Color del título en rosa fuerte */
+  }
+  
+  /* Logo */
+.logo {
+  max-width: 40px;
+  margin-right: 10px;
+  vertical-align: middle;
+}

@@ -1,0 +1,55 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <!--icono de hamburguesa-->
+      <!--<ion-menu-button></ion-menu-button>--->
+    </ion-buttons>
+    <ion-title>
+      <!--tirulo e icono decorativo -->
+      <img src="assets/img/logo.jpg" alt="ComicsLocuras Logo" class="logo">
+      <ion-icon name="person"></ion-icon>
+      ComicsLocuras  
+      <ion-icon name="person"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+
+    <h1>Nueva contraseña</h1>
+  <!-- ingresar la nueva contraseña -->
+  <ion-input 
+  type="password" 
+  fill="solid"
+  label="Password" 
+  value="password"  
+  labelPlacement="floating"
+  helperText="Ingresa tu contraseña"
+  errorText="debes agregar un caracter especial(*, #, etc), 
+  numeros(0-9) y letras(A-Z) "
+  ngModel
+  password
+  >
+  <ion-icon slot="start" name="lock-closed" aria-hidden="true"></ion-icon> <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+  </ion-input>
+<!-- Botón para mostrar/ocultar la contraseña  -->
+ <!--confirmar la nueva contraseña -->
+  <ion-input 
+  type="password" 
+  fill="solid"
+  label="Password" 
+  value="password"  
+  labelPlacement="floating"
+  helperText="vuelve a ingresa tu contraseña"
+  errorText="Las contraseñas son distintas"
+  ngModel
+  password
+  >
+  <ion-icon slot="start" name="lock-closed" aria-hidden="true"></ion-icon> <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+  </ion-input>
+<!-- Botón para mostrar/ocultar la contraseña  -->
+    <!-- Botón para guardar los cambios, redirige a la página del login -->
+  <ion-button color="dark"  [routerLink]="['/login']"> Guardar </ion-button>
+
+</ion-content>

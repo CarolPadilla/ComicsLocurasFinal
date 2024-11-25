@@ -1,0 +1,115 @@
+body, .ion-page, ion-content {
+  background-color: #1e1e1e; /* Fondo gris oscuro */
+  color: #ffffff; /* Texto blanco */
+  height: 100%; /* Asegura que el fondo cubra toda la altura */
+  margin: 0;
+  padding: 0;
+}
+
+ion-content {
+  --background: none;
+  padding: 20px;
+  --overflow: auto; /* Habilita scroll si es necesario */
+}
+
+/* Título en la barra de navegación */
+ion-title {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 1.5em;
+  color: #110000; /* Texto negro */
+  display: flex;
+  align-items: center;
+}
+
+/* Estilo específico para el texto "ComicsLocuras" */
+.pink-title {
+  color: #FF00FF; /* Color rosa fuerte */
+}
+
+/* Logo */
+.logo {
+  max-width: 40px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Íconos en rosa */
+.pink-icon {
+  color: #FF00FF; /* Color rosa fuerte para los íconos */
+}
+
+/* Introducción centrada */
+.intro-section {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.intro-section h1 {
+  font-size: 2em;
+  color: #f8f3f3;
+}
+
+.intro-section p {
+  color: #FF00FF;
+  font-size: 1.2em;
+}
+
+/* Sección de modelos */
+.models-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.models-section h2, .models-section p {
+  color: #ffffff;
+}
+
+/* Tarjeta destacada */
+.highlight-card {
+  background: #000000;
+  color: #161414;
+  border: 2px solid #FF00FF;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 20px 0;
+}
+
+ion-card-title {
+  color: #ffffff;
+  font-size: 1.5em;
+}
+
+ion-card-subtitle {
+  color: #FF00FF;
+  font-size: 1em;
+}
+
+ion-card-content {
+  color: #f8f3f3;
+}
+
+/* Sección de modelos */
+.models-section img {
+  border: 2px solid #FF00FF;
+  border-radius: 5px;
+  max-width: 100%;
+}
+
+/* Estilo para botones de categorías */
+.models-section ion-button {
+  background-color: #FF00FF; /* Fondo rosa fuerte */
+  color: #ffffff; /* Texto blanco */
+  font-size: 1.2em; /* Tamaño de fuente mayor */
+  border: 2px solid #FF00FF; /* Borde rosa */
+  border-radius: 15px; /* Bordes redondeados */
+  padding: 10px 20px; /* Espaciado interno */
+  margin: 10px 0; /* Espaciado vertical */
+  transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+}
+
+.models-section ion-button:hover {
+  background-color: #ff1493; /* Fondo rosa más oscuro al pasar el mouse */
+  transform: scale(1.05); /* Aumenta el tamaño al pasar el mouse */
+}
+
+

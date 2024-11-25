@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <img src="assets/icon/Logo.png" alt="logo">
+      <ion-icon name="logo-ionitron" slot="start"></ion-icon>
+      ComicsLocuras
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Paso 1: Ingresar correo -->
+  <div *ngIf="paso === 1">
+    <ion-item>
+      <ion-label position="floating">Correo electrónico</ion-label>
+      <ion-input type="email" [(ngModel)]="email"></ion-input>
+    </ion-item>
+    <ion-button expand="block" (click)="buscarUsuario()">Siguiente</ion-button>
+  </div>
+
+  <!-- Paso 2: Responder pregunta de seguridad -->
+  <div *ngIf="paso === 2">
+    <ion-item>
+      <ion-label>Pregunta de seguridad</ion-label>
+      <ion-select [(ngModel)]="preguntaSeleccionada">
+        <ion-select-option *ngFor="let pregunta of preguntasSeguridad" [value]="pregunta">
+          {{pregunta}}
+        </ion-select-option>
+      </ion-select>
+      <ion-label position="floating">Tu respuesta</ion-label>
+      <ion-input type="text" [(ngModel)]="respuestaUsuario"></ion-input>
+    </ion-item>
+    <ion-button expand="block" (click)="verificarRespuesta()">Verificar</ion-button>
+  </div>
+
+  <!-- Paso 3: Nueva contraseña -->
+  <div *ngIf="paso === 3">
+    <ion-item>
+      <ion-label position="floating">Nueva contraseña</ion-label>
+      <ion-input type="password" [(ngModel)]="nuevaContrasena"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Confirmar contraseña</ion-label>
+      <ion-input type="password" [(ngModel)]="confirmarContrasena"></ion-input>
+    </ion-item>
+    <ion-button expand="block" (click)="cambiarContrasena()">Cambiar contraseña</ion-button>
+  </div>
+</ion-content>

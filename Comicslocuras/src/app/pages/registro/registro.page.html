@@ -1,0 +1,90 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <!-- Icono de hamburguesa -->
+      <!--<ion-menu-button></ion-menu-button>--->
+    </ion-buttons>
+    <ion-title>
+      <!-- Título e icono bonito -->
+      <img src="assets/img/logo.jpg" alt="ComicsLocuras Logo" class="logo">
+      <ion-icon name="person"></ion-icon>
+      ComicsLocuras
+      <ion-icon name="person"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- Aquí parte el registro -->
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-content>
+      <h1>Registro</h1>
+
+      <!-- Campo Nombre -->
+      <ion-item>
+        <ion-label position="floating">Nombre</ion-label>
+        <ion-input [(ngModel)]="nombre"></ion-input>
+      </ion-item>
+
+
+      <!-- Campo Email -->
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input [(ngModel)]="email" type="email"></ion-input>
+      </ion-item>
+
+      <!-- Validación de Email -->
+      <ion-item *ngIf="!validarEmail(email) && email">
+        <ion-label color="danger">Email inválido</ion-label>
+      </ion-item>
+
+      <!-- Campo Contraseña -->
+      <ion-item>
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input [(ngModel)]="contrasena" type="password">
+          <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+        </ion-input>
+      </ion-item>
+
+      <!-- Campo Repetir Contraseña -->
+      <ion-item>
+        <ion-label position="floating">Repetir Contraseña</ion-label>
+        <ion-input [(ngModel)]="repetirContrasena" type="password">
+          <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+        </ion-input>
+      </ion-item>
+
+      <!--Tipo de usuario-->
+      <ion-item>
+        <ion-label>Pregunta de seguridad</ion-label>
+        <ion-select [(ngModel)]="pregunta">
+          <ion-select-option *ngFor="let pregunta of preguntasSeguridad" [value]="pregunta">
+            {{pregunta}}
+          </ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Respuesta</ion-label>
+        <ion-input [(ngModel)]="respuesta" type="text"></ion-input>
+      </ion-item>
+
+      <!-- Validación de Contraseña -->
+      <ion-item *ngIf="!validarContrasena(contrasena) && contrasena">
+        <ion-label color="danger">La contraseña debe tener entre 6 y 8 caracteres y al menos un carácter
+          especial.</ion-label>
+      </ion-item>
+
+      <!-- Validación de coincidencia de contraseñas -->
+      <ion-item
+        *ngIf="contrasena !== repetirContrasena && repetirContrasena">
+        <ion-label color="danger">Las contraseñas no coinciden</ion-label>
+      </ion-item>
+
+      <!-- Botón de Registro -->
+      <ion-button expand="full" (click)="registrar()" >Registrar</ion-button>
+      <h5>¿Tienes cuenta? <a [routerLink]="['/login']">Inicia Sesión</a></h5>
+
+    </ion-card-content>
+  </ion-card>
+</ion-content>

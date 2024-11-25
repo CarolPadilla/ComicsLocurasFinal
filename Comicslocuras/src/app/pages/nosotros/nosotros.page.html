@@ -1,0 +1,55 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      <img src="assets/img/logo.jpg" alt="ComicsLocuras Logo" class="logo">
+      <ion-icon name="walk"></ion-icon>
+      Nosotros
+      <ion-icon name="walk"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-grid>
+    <!-- Introducción -->
+    <ion-row>
+      <ion-col size="12">
+        <h1>Sobre nosotros</h1>
+        <h2>¿Cómo Inició Todo?</h2>
+        <p>"En ComicsLocuras, dos amigos apasionados por los cómics y mangas decidieron transformar su amor por estos universos en un proyecto único. La idea nació de nuestras charlas sobre héroes y aventuras, y ahora cada rincón de nuestra plataforma refleja esa emoción y dedicación por compartir lo mejor del cómic y el manga con otros fans."</p>
+      </ion-col>
+    </ion-row>
+
+    <!-- Colaboradores -->
+    <ion-row>
+      <ion-col size="12">
+        <h3>Colaboradores</h3>
+      </ion-col>
+    </ion-row>
+
+    <!-- Tarjeta de colaboradores -->
+    <ion-row>
+      <ion-col size="12" size-md="6">
+        <ion-card>
+          <img alt="Carol Padilla Hector Cornejo" src="assets/img/nosotros img.jpeg" />
+          <ion-card-header>
+            <ion-card-title>Carol Padilla-Hector Cornejo</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            "En ComicsLocuras, dos amigos crearon el destino perfecto para los fanáticos de cómics y mangas. Descubre nuestra exclusiva colección y lleva a casa tus historias favoritas. ¡No te lo pierdas!"
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- Pie de página opcional -->
+  <ion-footer collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Nosotros</ion-title>
+    </ion-toolbar>
+  </ion-footer>
+</ion-content>

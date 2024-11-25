@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <!--icono de hamburguesa-->
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      <!---titulo e icono bonito-->
+      <img src="assets/img/logo.jpg" alt="ComicsLocuras Logo" class="logo">
+      <ion-icon name="navigate-circle-sharp" class="pink-icon"></ion-icon>
+      ComicsLocuras  
+      <ion-icon name="navigate-circle-sharp" class="pink-icon"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Geolocalizacion</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-button (click)="obtenerPosicion()">Obtener posición actual</ion-button>
+
+<div *ngIf="latitud && longitud">
+  <p>Latitud: {{ latitud }}</p>
+  <p>Longitud: {{ longitud }}</p>
+</div>

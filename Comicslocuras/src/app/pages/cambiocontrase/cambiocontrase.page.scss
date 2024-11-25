@@ -1,0 +1,60 @@
+/* Estilo general para el ion-content */
+ion-content {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fuente estilo cómic */
+    padding: 20px; /* Espaciado general */
+    --background: #000000; /* Fondo negro */
+}
+
+/* Estilo para el ion-header */
+ion-header {
+    background-color: #000000; /* Fondo negro */
+}
+
+/* Estilo para el ion-title en el ion-header */
+ion-title {
+    color: #f526a5; /* Texto en color rosa */
+    font-size: 1.5em; /* Tamaño del título */
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo para el h1 */
+h1 {
+    text-align: center;
+    color: #f526a5; /* Texto en color rosa */
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+/* Estilo para los inputs */
+ion-input {
+    --color: #f72498; /* Texto en color rosa en los inputs */
+    --placeholder-color: #464242; /* Color gris para los placeholders */
+    --padding-start: 15px; /* Espaciado interno */
+    --padding-end: 15px;
+    --border-radius: 5px; /* Bordes redondeados */
+    margin: 10px 0; /* Espacio alrededor de los inputs */
+}
+
+/* Estilo para los botones */
+ion-button {
+    background-color: #003366; /* Fondo azul oscuro para los botones */
+    color: #ffffff; /* Texto blanco */
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 10px 20px; /* Espaciado interno */
+    margin: 20px 0; /* Espacio alrededor del botón */
+}
+
+/* Estilo para los ion-icons en los inputs */
+ion-icon {
+    --color: #f72498; /* Color de los iconos en color rosa */
+}
+
+/* Logo */
+.logo {
+    max-width: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  

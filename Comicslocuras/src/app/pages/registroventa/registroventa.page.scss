@@ -1,0 +1,52 @@
+/* Fondo negro para el contenido */
+ion-content {
+    --background: #000000; /* Fondo negro */
+    color: #ffffff; /* Texto blanco */
+  }
+  
+  /* Encabezado con fondo blanco y texto rosa fuerte */
+  ion-header {
+    --background: #ffffff; /* Fondo blanco del encabezado */
+    color: #ff007f; /* Letras rosa fuerte */
+  }
+  
+  /* Estilo para ion-toolbar */
+  ion-toolbar {
+    --background: transparent;
+    color: #ff007f;
+  }
+  
+  /* Iconos del encabezado en rosa */
+  ion-title ion-icon {
+    color: #ff007f;
+  }
+  
+  /* Estilo para ion-item */
+  ion-item {
+    --background: transparent;
+    color: #ffffff;
+  }
+  
+  /* Botones centrados con color rosa y bordes redondos */
+  ion-button {
+    --background: #ff007f;
+    --color: #ffffff;
+  }
+  
+  /* Cambia el color de fondo al pasar el cursor */
+  ion-button:hover {
+    --background: #ff3399;
+  }
+  
+  /* Elimina el estilo del calendario */
+  ion-datetime {
+    --background: transparent; /* Fondo transparente para el calendario */
+    color: #ffffff; /* Color de texto blanco */
+  }
+
+  /* Logo */
+.logo {
+  max-width: 40px;
+  margin-right: 10px;
+  vertical-align: middle;
+}

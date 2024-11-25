@@ -1,0 +1,66 @@
+/* Fondo negro para toda la página */
+ion-content {
+    --background: black;
+}
+ion-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f8057e; /* Color rosa fuerte para el título */
+  }
+  
+  ion-icon {
+    color: #f03994; /* Color rosa fuerte para los íconos */
+    margin: 0 5px; /* Espaciado entre el ícono y el texto */
+  }
+
+/* Contenedor del formulario */
+.form-container {
+    padding: 20px;
+    background-color: #333; /* Fondo gris oscuro */
+    border: 2px solid rgb(247, 32, 139); /* Bordes rosas */
+    border-radius: 8px;
+    margin: 16px; /* Espaciado */
+    color: white; /* Letra blanca */
+}
+
+/* Estilo para los títulos */
+h1 {
+    color: rgb(233, 11, 122); /* Color rosa fuerte para el título */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo para los ion-items dentro del formulario */
+ion-item {
+    --background: #444; /* Fondo gris más oscuro para los items */
+    color: white;
+    border: 2px solid rgb(247, 14, 130); /* Bordes rosas */
+    border-radius: 8px;
+    margin-top: 12px; /* Espaciado entre items */
+}
+
+/* Estilo de los labels y texto de input */
+ion-label,
+ion-input,
+ion-textarea,
+ion-select {
+    color: white; /* Texto blanco */
+}
+
+/* Botón agregar con estilo personalizado */
+ion-button {
+    --background: #f31081 !important; /* Fondo rosa fuerte */
+    --border: 2px solid #ec087a !important; /* Bordes rosas */
+    --color: white !important; /* Letra blanca */
+    border-radius: 5px;
+    padding: 10px 20px; /* Tamaño del botón */
+    margin-top: 20px; /* Espacio superior */
+}
+
+/* Logo */
+.logo {
+    max-width: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }

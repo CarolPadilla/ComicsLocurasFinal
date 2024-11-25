@@ -1,0 +1,46 @@
+
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <!--iocono de hamburguesa-->
+      <!--<ion-menu-button></ion-menu-button>---->
+    </ion-buttons>
+    <ion-title>
+      <!---titulo e icono bonito-->
+      <img src="assets/img/logo.jpg" alt="ComicsLocuras Logo" class="logo">
+      <ion-icon name="person"></ion-icon>
+      Editar Perfil  
+      <ion-icon name="person"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="content-wrapper">
+    <h1>Editar perfil</h1>
+<!--foto usuario-->
+    <h2>Foto de perfil</h2>
+    <ion-button class="styled-button">Cambiar foto de perfil</ion-button>
+
+    <!-- Icono de perfil -->
+    <div class="profile-icon-container">
+      <ion-icon name="person-circle" class="profile-icon"></ion-icon>
+    </div>
+
+    <h2>Nombre</h2>
+    <ion-item>
+      <ion-input label="Ingrese su nombre" labelPlacement="floating" placeholder="ej: Carol Padilla"></ion-input>
+    </ion-item>
+
+    <h2>Correo</h2>
+    <ion-item>
+      <ion-input label="Ingrese su correo" labelPlacement="floating" placeholder="ej: ejemplo@correo.com"></ion-input>
+    </ion-item>
+
+    <h2>Contraseña</h2>
+    <p><a [routerLink]="['/cambiocontrase']">Cambiar tu contraseña <ion-icon name="create"></ion-icon></a></p>
+
+    <ion-button class="styled-button">Guardar cambios</ion-button>
+  </div>
+</ion-content>

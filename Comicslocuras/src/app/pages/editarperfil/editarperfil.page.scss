@@ -1,0 +1,102 @@
+/* Estilo general para el ion-content */
+ion-content {
+    --background: black; /* Fondo negro para toda la página */
+    color: white; /* Texto blanco para contraste */
+    padding: 0; /* Sin padding adicional */
+}
+ion-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f8057e; /* Color rosa fuerte para el título */
+  }
+  
+  ion-icon {
+    color: #f03994; /* Color rosa fuerte para los íconos */
+    margin: 0 5px; /* Espaciado entre el ícono y el texto */
+  }
+
+/* Contenedor centralizado con fondo gris oscuro */
+.content-wrapper {
+    background-color: #333; /* Fondo gris oscuro */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para profundidad */
+    padding: 20px; /* Padding dentro del contenedor */
+    max-width: 600px; /* Ancho máximo reducido del contenedor */
+    margin: 20px auto; /* Centra el contenedor horizontalmente */
+}
+
+/* Estilo para el título principal */
+h1 {
+    color: white; /* Texto blanco */
+    text-align: center;
+    margin-bottom: 20px; /* Espacio abajo del título */
+    font-size: 1.8rem; /* Tamaño de fuente más pequeño */
+}
+
+/* Estilo para los subtítulos (h2) */
+h2 {
+    color: white; /* Texto blanco */
+    margin-top: 20px; /* Espacio superior */
+    margin-bottom: 10px; /* Espacio inferior */
+    font-size: 1.3rem; /* Tamaño de fuente más pequeño */
+}
+
+/* Estilo para los botones con color rosa y efectos llamativos */
+.styled-button {
+    --background: #fd0481 !important; /* Fondo rosa fuerte */
+    --color: white !important; /* Texto blanco */
+    --border-radius: 8px !important; /* Bordes redondeados */
+    --padding-start: 20px !important; /* Padding ajustado */
+    --padding-end: 20px !important; /* Padding ajustado */
+    --padding-top: 12px !important; /* Padding ajustado */
+    --padding-bottom: 12px !important; /* Padding ajustado */
+    margin-top: 20px; /* Espacio superior */
+    font-size: 1rem; /* Tamaño de fuente ajustado */
+    font-weight: bold; /* Negrita */
+    text-transform: uppercase; /* Mayúsculas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para profundidad */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transición para efectos al pasar el mouse */
+}
+
+.styled-button:hover {
+    --background: #e60076 !important; /* Fondo rosa más oscuro al pasar el mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada al pasar el mouse */
+}
+
+/* Estilo para el icono de perfil */
+.profile-icon-container {
+    text-align: center; /* Centra el ícono */
+    margin-top: 20px; /* Espacio superior */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+.profile-icon {
+    font-size: 80px; /* Tamaño del ícono */
+    color: #fd0481; /* Color rosa fuerte para el ícono */
+    border: 4px solid #fd0481; /* Borde rosa alrededor del ícono */
+    border-radius: 50%; /* Bordes redondeados para el círculo */
+    padding: 10px; /* Padding para que el borde sea visible */
+}
+
+/* Estilo para los items dentro del formulario */
+ion-item {
+    --background: #444; /* Fondo gris más oscuro para los items */
+    --border-radius: 8px; /* Bordes redondeados */
+    margin-top: 10px; /* Espacio superior */
+    padding: 10px; /* Padding ajustado dentro de los items */
+}
+
+/* Estilo para los elementos de entrada (ion-input) */
+ion-input {
+    color: white; /* Texto blanco */
+    font-size: 1rem; /* Tamaño de fuente ajustado */
+}
+
+/* Logo */
+.logo {
+    max-width: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  

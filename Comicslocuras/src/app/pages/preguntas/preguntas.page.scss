@@ -1,0 +1,74 @@
+/* Estilo general para el ion-content */
+ion-content {
+    --background-color: #000000; /* Fondo negro para toda la página */
+    color: #e0e0e0; /* Texto claro para contraste */
+    padding: 20px; /* Añadir padding para espaciado general */
+}
+ion-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f8057e; /* Color rosa fuerte para el título */
+  }
+  
+  ion-icon {
+    color: #f03994; /* Color rosa fuerte para los íconos */
+    margin: 0 5px; /* Espaciado entre el ícono y el texto */
+  }
+
+/* Estilo para el card */
+ion-card {
+    background-color: #1c1c1c; /* Fondo oscuro dentro del card */
+    border: 2px solid #f3129d; /* Bordes dorados */
+    border-radius: 15px; /* Bordes más redondeados */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada */
+    padding: 20px;
+    margin: 20px; /* Añadir margen alrededor del card */
+}
+
+/* Estilo para el título del card */
+ion-card-title {
+    color: #e929a9; /* Color dorado brillante */
+    font-family: 'Arial', sans-serif; /* Fuente moderna y limpia */
+    text-align: center;
+    font-size: 1.8em; /* Título grande */
+    margin-bottom: 20px;
+}
+
+/* Estilo para las etiquetas */
+ion-label {
+    color: #e0e0e0; /* Color gris claro */
+    font-family: 'Arial', sans-serif; /* Fuente moderna y limpia */
+    font-size: 1.1em; /* Tamaño de fuente más grande */
+    margin-bottom: 10px; /* Espacio debajo de la etiqueta */
+    display: block; /* Asegura que la etiqueta ocupe una línea completa */
+}
+
+/* Estilo para los inputs y textareas */
+ion-input, ion-textarea {
+    border: 2px solid #f00c89; /* Bordes dorados más gruesos */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px; /* Espacio interno para los inputs */
+    margin-bottom: 20px; /* Espacio entre campos */
+    background-color: #333333; /* Fondo gris oscuro para los campos */
+    color: #e0e0e0; /* Texto claro dentro del campo */
+    font-family: 'Arial', sans-serif; /* Fuente moderna y limpia */
+}
+
+/* Estilo para el botón */
+ion-button {
+    background-color: #f312a8; /* Fondo dorado brillante */
+    color: #000000; /* Texto negro */
+    font-family: 'Arial', sans-serif; /* Fuente moderna y limpia */
+    font-size: 1.1em; /* Tamaño de fuente más grande */
+    margin-top: 20px; /* Espacio arriba del botón */
+    border-radius: 8px; /* Bordes del botón redondeados */
+}
+
+/* Logo */
+.logo {
+    max-width: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  

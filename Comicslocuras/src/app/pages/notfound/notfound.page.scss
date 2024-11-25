@@ -1,0 +1,57 @@
+
+  .not-found-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh; /* Asegura que el contenido ocupe toda la altura de la pantalla */
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: black;
+    display: flex;
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    justify-content: center;
+    align-items: center; /* Centra horizontalmente el contenido */
+    text-align: center;
+    padding: 20px; /* Opcional: Añadir un padding para dar espacio interno */
+  }
+  
+  .container img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+  
+  .container h1 {
+    font-size: 4rem;
+    margin: 16px 0;
+    color: #ff1493; /* Letras rosa fuerte */
+  }
+  
+  .container h2 {
+    font-size: 2rem;
+    margin: 8px 0;
+    color: #ff1493; /* Letras rosa fuerte */
+  }
+  
+  .container p {
+    font-size: 1rem;
+    margin: 8px 0;
+    color: #ff1493; /* Letras rosa fuerte */
+  }
+  
+  ion-button {
+    margin-top: 16px;
+    --background: #ff1493; /* Botón con fondo rosa fuerte */
+    --color: black; /* Texto del botón negro */
+  }
+  
+/* Logo */
+.logo {
+  max-width: 40px;
+  margin-right: 10px;
+  vertical-align: middle;
+}

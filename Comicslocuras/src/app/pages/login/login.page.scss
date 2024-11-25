@@ -1,0 +1,141 @@
+/* Estilo para el h5 */
+//h5 {
+  //color: #f526a5; /* Texto en color rosa */
+  //text-align: center;
+  //margin: 10px 0;
+//}
+
+/* Estilo para el h6 */
+//h6 {
+  //color: #f526a5; /* Texto en color rosa */
+  //text-align: center;
+  //margin: 10px 0;
+//}
+
+/* Estilo general para el ion-content */
+//ion-content {
+  //font-family: 'Comic Sans MS', cursive, sans-serif; /* Fuente estilo cómic */
+  //padding: 20px; /* Espaciado general */
+  //--background: #000000; /* Fondo negro */
+//}
+
+/* Estilo para el ion-header */
+//ion-header {
+  //background-color: #000000; /* Fondo negro */
+//}
+
+/* Estilo para el ion-title en el ion-header */
+//ion-title {
+  //color: #f526a5; /* Texto en color rosa */
+  //font-size: 1.5em; /* Tamaño del título */
+  //display: flex;
+  //align-items: center;
+//}
+
+/* Estilo para el h1 */
+//h1 {
+  //text-align: center;
+  //color: #f526a5; /* Texto en color rosa */
+  //font-size: 2em;
+  //margin: 20px 0;
+//}
+
+/* Estilo para los inputs */
+//ion-input {
+  //--color: #f72498; /* Texto en color rosa en los inputs */
+  //--placeholder-color: #464242; /* Color gris para los placeholders */
+  //--padding-start: 15px; /* Espaciado interno */
+  //--padding-end: 15px;
+  //--border-radius: 5px; /* Bordes redondeados */
+ // margin: 10px 0; /* Espacio alrededor de los inputs */
+//}
+
+/* Estilo para los botones */
+//ion-button {
+  //background-color: #003366; /* Fondo azul oscuro para los botones */
+  //color: #ffffff; /* Texto blanco */
+  //font-size: 1em;
+  //border-radius: 20px;
+  //padding: 10px 20px; /* Espaciado interno */
+  //margin: 20px 0; /* Espacio alrededor del botón */
+//}
+
+/* Archivo de estilos del componente (e.g., login.page.scss) */
+
+/* Estilo para el fondo completo de la página */
+ion-content {
+    --background: #000; /* Fondo negro completo */
+  }
+  
+  /* Estilo para la tarjeta que contiene el formulario de inicio de sesión */
+  ion-card {
+    --background: #333; /* Fondo gris oscuro para el recuadro */
+    color: #fff; /* Color de texto blanco dentro de la tarjeta */
+    border-radius: 15px; /* Esquinas redondeadas para la tarjeta */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para darle profundidad a la tarjeta */
+  }
+  ion-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f8057e; /* Color rosa fuerte para el título */
+  }
+  
+  ion-icon {
+    color: #f03994; /* Color rosa fuerte para los íconos */
+    margin: 0 5px; /* Espaciado entre el ícono y el texto */
+  }
+  
+  
+  /* Estilo para el título del login */
+  h1 {
+    color: #ff007f; /* Color rosa fuerte para el título "Ingreso" */
+    text-align: center; /* Centrar el título */
+    margin-top: 20px; /* Espaciado superior */
+  }
+  
+  /* Estilo para los elementos de entrada (email y contraseña) */
+  ion-item {
+    --background: #444; /* Fondo gris oscuro para los campos de entrada */
+    border-radius: 8px; /* Esquinas redondeadas para los campos de entrada */
+    margin-bottom: 15px; /* Espaciado inferior entre los campos de entrada */
+  }
+  
+  /* Estilo para las etiquetas y entradas de texto */
+  ion-label {
+    color: #fff; /* Letras blancas para las etiquetas */
+  }
+  
+  ion-input {
+    color: #fff; /* Letras blancas para el texto de entrada */
+  }
+  
+  /* Estilo para los botones */
+  ion-button {
+    --background: #ff007f; /* Fondo rosa fuerte para el botón */
+    --color: #fff; /* Letras blancas en el botón */
+    margin-top: 20px; /* Espaciado superior para el botón */
+  }
+  
+  ion-button:hover {
+    --background: #e6006c; /* Color rosa más oscuro al pasar el ratón por el botón */
+  }
+  
+  /* Estilo para los enlaces */
+  h5 a, h6 a {
+    color: #ff007f; /* Rosa fuerte para los enlaces */
+    text-decoration: none; /* Eliminar subrayado de los enlaces */
+  }
+  
+  h5, h6 {
+    color: #fff; /* Letras blancas para el texto de los subtítulos */
+    text-align: center; /* Centrar los subtítulos */
+    margin-top: 20px; /* Espaciado superior */
+  }
+  
+/* Logo */
+.logo {
+  max-width: 40px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
